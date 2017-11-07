@@ -2,18 +2,20 @@
  * Created by Clovin on 03/11/2017.
  */
 class Page {
-  constructor (domClass) {
-    this.domClass = domClass
+  constructor (dom, initFunc, playFunc) {
+    this.dom = dom
+    this.initFunc = initFunc
+    this.playFunc = playFunc
   }
 
-  init () {
+  initPage () {
     // init
-    console.log('init:', this.domClass)
+    this.initFunc()
   }
 
   play () {
     // play
-    console.log('play:', this.domClass)
+    this.playFunc()
   }
 }
 

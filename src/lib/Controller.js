@@ -9,7 +9,7 @@ class Controller {
 
   initAnimation () {
     this.animationQueue.forEach(animation => {
-      animation.init()
+      animation.initPage()
     })
   }
 
