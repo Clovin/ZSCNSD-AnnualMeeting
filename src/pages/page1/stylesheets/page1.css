@@ -1,16 +1,9 @@
 .page1 {
   width: 100%;
   height: 100%;
-  background-image: url("../images/timg.jpg");
-  background-size: auto 100%;
 }
-.greetings{
-  min-width: 100%;
+.text_1{
+  width: 100%;
   font-size: 1.7rem;
-  text-align: center;
   line-height: 3rem;
-  color: white;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
 }

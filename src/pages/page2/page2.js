@@ -9,7 +9,6 @@ var initFunc = function () {
   this.chart = new Charts('.js-page2-chart', {
     series: [
       {
-        name: 'xxx',
         type: 'pie',
         radius: ['50%', '70%'],
         data: [
