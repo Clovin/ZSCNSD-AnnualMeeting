@@ -8,15 +8,32 @@
   line-height: 5rem;
 }
 
+.text_3_1{
+  position: relative;
+  top: 3rem;
+  font-size: 1.7rem;
+  line-height: 4rem;
+}
+
 .js-page3-chart{
-  height: 10rem;
+  height: 6rem;
 }
 
-.container{
-  float: left;
-  width: 30%;
+.grid1{
+  position: relative;
+  top: 1rem;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 33% 33% 33%;
 }
 
+.grid2{
+  position: relative;
+  top: 2rem;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+}
 
 .chart_title{
   font-size: 1.2rem;

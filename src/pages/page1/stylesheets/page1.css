@@ -6,4 +6,6 @@
   width: 100%;
   font-size: 1.7rem;
   line-height: 3rem;
+  position: relative;
+  top: 32%;
 }
