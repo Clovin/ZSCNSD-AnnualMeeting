@@ -1,4 +1,4 @@
-import './stylesheets/page4.css'
+import './stylesheets/memory3.css'
 import Page from '../../lib/Page'
 
 let initFunc = function () {
@@ -9,6 +9,6 @@ let playFunc = function () {
   console.log('draw')
 }
 
-let page4 = new Page('page4', initFunc, playFunc)
+let memory3 = new Page('memory3', initFunc, playFunc)
 
-export {page4 as default}
+export {memory3 as default}
