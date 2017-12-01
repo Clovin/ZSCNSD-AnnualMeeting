@@ -12,11 +12,10 @@ var initFunc = function () {
         type: 'pie',
         radius: ['50%', '70%'],
         data: [
-          {value: 2, name: '1'},
-          {value: 3, name: '2'},
-          {value: 3, name: '3'},
-          {value: 3, name: '4'},
-          {value: 3, name: '5'}
+          {value: 17, name: '14级'},
+          {value: 29, name: '15级'},
+          {value: 34, name: '16级'},
+          {value: 63, name: '17级'}
         ],
         itemStyle: {
           emphasis: {
@@ -26,13 +25,24 @@ var initFunc = function () {
           }
         }
       }
-    ]
+    ],
+    textStyle: {fontSize: 18}
   })
   this.chart.init()
 }
 
 var playFunc = function () {
-  this.chart.draw()
+  let p2 = document.getElementsByClassName('page2')[0]
+  p2.addEventListener('animationstart', function () {
+    document.getElementsByClassName('title2')[0].style.animation = 'FadeIn 1s linear 3500ms forwards'
+    document.getElementsByClassName('title2')[0].addEventListener('animationend', function () {
+      page2.chart.draw()
+      document.getElementsByClassName('text_2')[0].style.animation = 'FadeIn 1s linear 250ms forwards'
+    })
+  })
+  document.getElementsByClassName('text_2')[0].addEventListener('animationend', function () {
+    p2.className = p2.className + ' ' + 'page2Change'
+  })
 }
 
 let page2 = new Page('.page2', initFunc, playFunc)

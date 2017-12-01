@@ -34,45 +34,66 @@
   padding-left: 1rem;
 }
 
+/*Animation*/
 
 .cover{
-  -webkit-animation: rotate 10s linear infinite ;
-  -moz-animation: rotate 10s linear infinite;
-  animation: rotate 10s linear infinite;
+  -webkit-animation: Rotate 10s linear infinite ;
+  -moz-animation: Rotate 10s linear infinite;
+  animation: Rotate 10s linear infinite;
   animation-play-state: paused;
 }
 
-@-webkit-keyframes rotate{
-  0%{-webkit-transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
-}
-@-moz-keyframes rotate {
-  0%{-moz-transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
-}
-@keyframes rotate{
-  0%{transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
-}
-
 .home{
-  -webkit-animation: Sc 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  -moz-animation: Sc 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  animation: Sc 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  -webkit-animation: Scl 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  -moz-animation: Scl 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: Scl 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   animation-delay: 2500ms;
   animation-play-state: paused;
 }
 
-@-webkit-keyframes Sc {
+.text_h{
+  -webkit-animation: FadeIn linear 500ms forwards;
+  -moz-animation: FadeIn linear 500ms forwards;
+  animation: FadeIn linear 500ms forwards;
+}
+
+/*cover rotate*/
+@-webkit-keyframes Rotate{
+  0%{-webkit-transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+@-moz-keyframes Rotate {
+  0%{-moz-transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+@keyframes Rotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+/*page scroll*/
+@-webkit-keyframes Scl {
   0%{transform: translate(0,0);}
   100%{transform: translate(0,-100%);}
 }
-@-moz-keyframes Sc {
+@-moz-keyframes Scl {
   0%{transform: translate(0,0);}
   100%{transform: translate(0,-100%);}
 }
-@keyframes Sc {
+@keyframes Scl {
   0%{transform: translate(0,0);}
   100%{transform: translate(0,-100%);}
 }
 
+@-webkit-keyframes FadeIn {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@-moz-keyframes FadeIn {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes FadeIn {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}

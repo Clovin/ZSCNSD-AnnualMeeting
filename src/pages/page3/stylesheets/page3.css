@@ -38,3 +38,21 @@
 .chart_title{
   font-size: 1.2rem;
 }
+
+.chart_title, .text_3, .text_3_1{
+  opacity: 0;
+}
+
+/*Animation*/
+.page3{
+  animation: Pg3In 3000ms ease-out 109s forwards;
+}
+
+@keyframes Pg3In {
+  0%{transform: translate(0, 0)}
+  100%{transform: translate(0, -500%)}
+}
+@keyframes FadeIn {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}

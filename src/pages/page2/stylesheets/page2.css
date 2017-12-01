@@ -1,7 +1,14 @@
-.page2 {
+.page2{
   width: 100%;
   height: 100%;
 }
+
+.page2Change{
+  width: 100%;
+  height: 100%;
+  transform: translate(0, -400%)
+}
+
 
 .js-page2-chart {
   width: 100%;
@@ -9,9 +16,32 @@
   margin-top: 2rem;
 }
 
-.text_2{
+.text_2, .title2{
   position: relative;
   top: 3rem;
   font-size: 1.5rem;
   line-height: 3rem;
+  opacity: 0;
+}
+
+/*Animation* 100s*/
+.page2{
+  animation: Pg2In 3000ms ease-out 99s forwards;
+  animation-play-state: paused;
+}
+.page2Change{
+  animation: Pg2Out 1000ms linear 3000ms forwards
+}
+@keyframes Pg2In {
+  0% {transform: translate(0, 0); }
+  100% {transform: translate(0, -400%); }
+}
+@keyframes FadeIn {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+@keyframes Pg2Out {
+  0% {transform: translate(0, -400%); }
+  100% {transform: translate(0, -500%); }
+
 }

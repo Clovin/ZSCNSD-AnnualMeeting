@@ -4,3 +4,14 @@
   background-image: url("../images/timg.jpg");
   background-size: auto 100%;
 }
+
+/*Animaiton*/
+.memory2{
+  animation: Me2In 2700ms ease-out 38s forwards;
+  animation-play-state: paused;
+}
+
+@keyframes Me2In {
+  0%{transform: translate(0,0);}
+  100%{transform: translate(0,-200%);}
+}

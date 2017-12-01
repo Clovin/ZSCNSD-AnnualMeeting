@@ -28,6 +28,7 @@ html, body {
   margin-left: auto;
   box-shadow: inset 0 0 10px 5px rgb(202, 130, 200);
   top: 70%;
+  visibility: hidden;
 }
 
 .dialogue{

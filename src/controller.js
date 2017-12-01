@@ -24,4 +24,27 @@ controller.pushAnimation(page2)
 controller.pushAnimation(page3)
 controller.pushAnimation(page4)
 
+let index = []
+let cover = document.getElementsByClassName('cover')[0]
+index[0] = document.getElementsByClassName('home')[0]
+index[1] = document.getElementsByClassName('page1')[0]
+index[2] = document.getElementsByClassName('memory1')[0]
+index[3] = document.getElementsByClassName('memory2')[0]
+index[4] = document.getElementsByClassName('memory3')[0]
+index[5] = document.getElementsByClassName('page2')[0]
+index[6] = document.getElementsByClassName('page3')[0]
+index[7] = document.getElementsByClassName('page4')[0]
+let btn = document.getElementsByClassName('btn')[0]
+
+function Start (ele) {
+  ele.style.animationPlayState = 'running'
+}
+
+btn.onclick = function () {
+  cover.style.animationPlayState = 'running'
+  for (let i = 0; i <= 7; i++) {
+    Start(index[i])
+  }
+}
+
 export {controller as default}
