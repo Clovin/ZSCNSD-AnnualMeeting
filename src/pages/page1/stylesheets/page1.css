@@ -11,28 +11,15 @@
 }
 
 /*Animation*/
-@-webkit-keyframes Pg1In {
+@-webkit-keyframes P1In {
   0%{transform: translate(0,0);}
   100%{transform: translate(0,-100%);}
 }
-@-moz-keyframes Pg1In {
+@-moz-keyframes P1In {
   0%{transform: translate(0,0);}
   100%{transform: translate(0,-100%);}
 }
-@keyframes Pg1In {
+@keyframes P1In {
   0%{transform: translate(0,0);}
   100%{transform: translate(0,-100%);}
-}
-
-@-webkit-keyframes Pg1Out {
-  0%{opacity: 1; transform: translate(0, 0)}
-  100%{opacity: 0; transform: translate(0, -100%)}
-}
-@-moz-keyframes Pg1Out {
-  0%{opacity: 1; transform: translate(0, 0)}
-  100%{opacity: 0; transform: translate(0, -100%)}
-}
-@keyframes Pg1Out {
-  0%{opacity: 1; transform: translate(0, 0)}
-  100%{opacity: 0; transform: translate(0, -100%)}
 }

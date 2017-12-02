@@ -44,7 +44,7 @@
 }
 
 /*Animation*/
-@keyframes Pg3In {
-  0%{transform: translate(0, 0)}
+@keyframes P3In {
+  0%{transform: translate(0, -500%)}
   100%{transform: translate(0, -600%)}
 }

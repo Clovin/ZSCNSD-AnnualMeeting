@@ -50,20 +50,6 @@
   100%{transform: rotate(360deg);}
 }
 
-/*page scroll*/
-@-webkit-keyframes Scl {
-  0%{transform: translate(0,0); opacity: 1}
-  100%{transform: translate(0,-100%); opacity: 0}
-}
-@-moz-keyframes Scl {
-  0%{transform: translate(0,0); opacity: 1}
-  100%{transform: translate(0,-100%); opacity: 0}
-}
-@keyframes Scl {
-  0%{transform: translate(0,0); opacity: 1}
-  100%{transform: translate(0,-100%); opacity: 0}
-}
-
 @-webkit-keyframes FadeIn {
   0%{opacity: 0}
   100%{opacity: 1}

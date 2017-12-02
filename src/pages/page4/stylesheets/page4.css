@@ -5,10 +5,41 @@
   background-size: auto 100%;
 }
 
-.text_4{
-  position: relative;
-  top: 30%;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
-  line-height: 3rem;
+
+/*Animation*/
+.BlOt{
+  animation: BlurOut 1s linear 500ms forwards;
+}
+
+@keyframes P4In {
+  0%{transform: translate(0, -600%)}
+  100%{transform: translate(0, -700%)}
+}
+@keyframes BlurIn {
+  0%{
+    filter: blur(20px);
+    opacity: 0;
+  }
+  50%{
+    filter: blur(10px);
+    opacity: 0.5;
+  }
+  100%{
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes BlurOut {
+  0%{
+    filter: blur(0px);
+    opacity: 1;
+  }
+  50%{
+    filter: blur(10px);
+    opacity: 0.5;
+  }
+  100%{
+    filter: blur(20px);
+    opacity: 0;
+  }
 }

@@ -6,18 +6,14 @@
 }
 
 .Me3Out{
-  width: 100%;
-  height: 100%;
   transform:translate(0,-400%);
-  opacity: 1;
-  background-image: url("../images/timg.jpg");
-  background-size: auto 100%;
+  animation: M3Out 2s ease-in 1s forwards;
 }
 
 /*Animaiton*/
 
-@keyframes Me3In {
-  0%{transform: translate(0,0);}
+@keyframes M3In {
+  0%{transform: translate(0,-300%);}
   100%{transform: translate(0,-400%);}
 }
 

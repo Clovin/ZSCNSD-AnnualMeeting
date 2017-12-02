@@ -3,15 +3,16 @@
   height: 100%;
   background-image: url("../images/timg.jpg");
   background-size: auto 100%;
+  z-index: -5;
 }
 
 /*Animaiton*/
 
-@-webkit-keyframes Me2In {
-  0%{transform: translate(0,0);}
+@-webkit-keyframes M2In {
+  0%{transform: translate(0,-200%);}
   100%{transform: translate(0,-300%);}
 }
-@keyframes Me2In {
-  0%{transform: translate(0,0);}
+@keyframes M2In {
+  0%{transform: translate(0,-200%);}
   100%{transform: translate(0,-300%);}
 }

@@ -38,31 +38,37 @@ index[7] = document.getElementsByClassName('page4')[0]
 
 btn.onclick = function () {
   cover.style.animation = 'Rotate 10s linear infinite'
-  index[0].style.animation = 'Scl 2000ms ease-out 3s forwards'
+  index[0].style.animation = 'SclOut 2s ease-out 3s forwards'
   index[0].addEventListener('animationend', function () {
-    index[1].style.animation = 'Pg1In 2000ms ease-out 500ms forwards'
+    index[1].style.animation = 'P1In 2s ease-out 500ms forwards'
   })
   index[1].addEventListener('animationend', function () {
-    index[2].style.animation = 'Me1In 2000ms ease-out 4s forwards'
+    index[2].style.animation = 'M1In 2s ease-out 4s forwards'
   })
   index[2].addEventListener('animationend', function () {
-    index[3].style.animation = 'Me2In 2s ease-out 26s forwards'
+    index[3].style.animation = 'M2In 2s ease-out 26s forwards'
   })
   index[3].addEventListener('animationend', function () {
-    index[4].style.animation = 'Me3In 2s ease-out 26s forwards'
+    index[4].style.animation = 'M3In 2s ease-out 26s forwards'
   })
   index[4].addEventListener('animationend', function () {
-    index[5].style.animation = 'Pg2In 2s ease-out 30s forwards'
+    index[5].style.animation = 'P2In 2s ease-out 30s forwards'
   })
   index[5].addEventListener('animationstart', function () {
-    for (let j = 0; j <= 3; j++) {
+    for (let j = 0; j < 4; j++) {
       index[j].style.visibility = 'hidden'
     }
     index[4].className = index[4].className + ' Me3Out'
     index[4].style.animation = 'M3Out 2s ease-in 1s forwards'
   })
   index[5].addEventListener('animationend', function () {
-    index[6].style.animation = 'Pg3In 3s ease-out 9s forwards'
+    index[5].className = index[5].className + ' Pg2Out'
+    index[5].style.animation = 'P2Out 2s ease-in 4s forwards'
+
+    index[6].style.animation = 'P3In 2s ease-out 6500ms forwards'
+  })
+  index[6].addEventListener('animationend', function () {
+    index[7].style.animation = 'P4In 2s ease-out 6s forwards'
   })
 }
 

@@ -3,6 +3,11 @@
   height: 100%;
 }
 
+.Pg2Out{
+  transform: translate(0, -500%);
+  animation: P2Out 2s ease-in 1s forwards;
+}
+
 .js-page2-chart {
   width: 100%;
   height: 12rem;
@@ -18,11 +23,11 @@
 }
 
 /*Animation* 100s*/
-@keyframes Pg2In {
-  0% {transform: translate(0, 0); }
+@keyframes P2In {
+  0% {transform: translate(0, -400%); }
   100% {transform: translate(0, -500%); }
 }
-@keyframes Pg2Out {
+@keyframes P2Out {
   0% {
     transform: translate(0, -500%);
   }

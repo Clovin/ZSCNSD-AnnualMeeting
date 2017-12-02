@@ -12,10 +12,10 @@ var initFunc = function () {
         type: 'pie',
         radius: ['50%', '70%'],
         data: [
-          {value: 17, name: '14级'},
-          {value: 29, name: '15级'},
-          {value: 34, name: '16级'},
-          {value: 63, name: '17级'}
+          {value: 17, name: '14级', itemStyle: {normal: {color: '#d13623'}}},
+          {value: 29, name: '15级', itemStyle: {normal: {color: '#d1c036'}}},
+          {value: 34, name: '16级', itemStyle: {normal: {color: '#8E60D1'}}},
+          {value: 63, name: '17级', itemStyle: {normal: {color: '#1bb7d1'}}}
         ],
         itemStyle: {
           emphasis: {
