@@ -11,12 +11,8 @@ let initFunc = function () {
 let playFunc = function () {
   let pg1 = document.getElementsByClassName('page1')[0]
   let txt1 = document.getElementsByClassName('text_1')[0]
-
-  pg1.addEventListener('animationend', function () {
-    document.getElementsByClassName('text_1')[0].style.animationPlayState = 'running'
-  })
-  txt1.addEventListener('animationend', function () {
-    pg1.style.display = 'none'
+  pg1.addEventListener('animationstart', function () {
+    txt1.style.animation = 'FadeIn 1000ms linear forwards'
   })
 }
 

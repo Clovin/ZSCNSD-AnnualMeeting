@@ -6,12 +6,12 @@
 }
 
 /*Animaiton*/
-.memory2{
-  animation: Me2In 2700ms ease-out 38s forwards;
-  animation-play-state: paused;
-}
 
+@-webkit-keyframes Me2In {
+  0%{transform: translate(0,0);}
+  100%{transform: translate(0,-300%);}
+}
 @keyframes Me2In {
   0%{transform: translate(0,0);}
-  100%{transform: translate(0,-200%);}
+  100%{transform: translate(0,-300%);}
 }

@@ -11,16 +11,6 @@
 }
 
 /*Animation*/
-.page1{
-  -webkit-animation: Pg1In 2500ms ease-out 4500ms forwards;
-  -moz-animation: Pg1In 2500ms ease-out 4500ms forwards;
-  animation: Pg1In 2500ms ease-out 4500ms forwards;
-  animation-play-state: paused;
-}
-.text_1{
-  animation: txt1Out 500ms linear 2000ms forwards;
-  animation-play-state: paused;
-}
 @-webkit-keyframes Pg1In {
   0%{transform: translate(0,0);}
   100%{transform: translate(0,-100%);}
@@ -34,15 +24,15 @@
   100%{transform: translate(0,-100%);}
 }
 
-@-webkit-keyframes txt1Out {
+@-webkit-keyframes Pg1Out {
   0%{opacity: 1; transform: translate(0, 0)}
   100%{opacity: 0; transform: translate(0, -100%)}
 }
-@-moz-keyframes txt1Out {
+@-moz-keyframes Pg1Out {
   0%{opacity: 1; transform: translate(0, 0)}
   100%{opacity: 0; transform: translate(0, -100%)}
 }
-@keyframes txt1Out {
+@keyframes Pg1Out {
   0%{opacity: 1; transform: translate(0, 0)}
   100%{opacity: 0; transform: translate(0, -100%)}
 }

@@ -6,12 +6,11 @@
 }
 
 /*Animaiton*/
-.memory1{
-  animation: Me1In 2700ms ease-out 9s forwards;
-  animation-play-state: paused;
+@-webkit-keyframes Me1In {
+  0%{transform: translate(0,0); opacity: 0}
+  100%{transform: translate(0,-200%); opacity: 1}
 }
-
 @keyframes Me1In {
   0%{transform: translate(0,0); opacity: 0}
-  100%{transform: translate(0,-100%); opacity: 1}
+  100%{transform: translate(0,-200%); opacity: 1}
 }
