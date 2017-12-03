@@ -22,16 +22,13 @@
   opacity: 0;
 }
 
-/*Animation* 100s*/
+/*Animation*/
 @keyframes P2In {
-  0% {transform: translate(0, -400%); }
-  100% {transform: translate(0, -500%); }
+  0% {transform: translate(0, -400%); opacity: 0;}
+  100% {transform: translate(0, -500%); opacity: 1;}
 }
+
 @keyframes P2Out {
-  0% {
-    transform: translate(0, -500%);
-  }
-  100% {
-    transform: translate(0, -600%);
-  }
+  0% {transform: translate(0, -500%);}
+  100% {transform: translate(0, -600%);}
 }

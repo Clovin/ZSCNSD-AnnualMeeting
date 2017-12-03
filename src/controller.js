@@ -64,11 +64,10 @@ btn.onclick = function () {
   index[5].addEventListener('animationend', function () {
     index[5].className = index[5].className + ' Pg2Out'
     index[5].style.animation = 'P2Out 2s ease-in 4s forwards'
-
     index[6].style.animation = 'P3In 2s ease-out 6500ms forwards'
   })
   index[6].addEventListener('animationend', function () {
-    index[7].style.animation = 'P4In 2s ease-out 6s forwards'
+    index[7].style.animation = 'P4In 2s ease-out 6500ms forwards'
   })
 }
 

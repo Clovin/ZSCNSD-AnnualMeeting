@@ -45,6 +45,6 @@
 
 /*Animation*/
 @keyframes P3In {
-  0%{transform: translate(0, -500%)}
-  100%{transform: translate(0, -600%)}
+  0%{transform: translate(0, -500%); opacity: 0;}
+  100%{transform: translate(0, -600%); opacity: 1;}
 }

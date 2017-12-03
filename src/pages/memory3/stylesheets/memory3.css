@@ -11,13 +11,12 @@
 }
 
 /*Animaiton*/
-
 @keyframes M3In {
-  0%{transform: translate(0,-300%);}
-  100%{transform: translate(0,-400%);}
+  0%{transform: translate(0,-300%); opacity: 0;}
+  100%{transform: translate(0,-400%); opacity: 1;}
 }
 
 @keyframes M3Out {
-  0%{transform: translate(0,-400%); opacity: 1}
-  100%{transform: translate(0,-500%); opacity: 0}
+  0%{transform: translate(0,-400%);}
+  100%{transform: translate(0,-500%);}
 }

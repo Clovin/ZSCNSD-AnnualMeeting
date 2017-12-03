@@ -11,14 +11,6 @@
 }
 
 /*Animation*/
-@-webkit-keyframes P1In {
-  0%{transform: translate(0,0);}
-  100%{transform: translate(0,-100%);}
-}
-@-moz-keyframes P1In {
-  0%{transform: translate(0,0);}
-  100%{transform: translate(0,-100%);}
-}
 @keyframes P1In {
   0%{transform: translate(0,0);}
   100%{transform: translate(0,-100%);}
