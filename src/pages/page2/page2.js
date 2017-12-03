@@ -26,7 +26,10 @@ var initFunc = function () {
         }
       }
     ],
-    textStyle: {fontSize: 18}
+    textStyle: {
+      fontFamily: 'FZJLT',
+      fontSize: 18
+    }
   })
   this.chart.init()
 }
