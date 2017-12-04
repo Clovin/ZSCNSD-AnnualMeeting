@@ -16,14 +16,16 @@
 }
 
 .btn{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 50px;
   position: absolute;
   z-index: 1;
 }
 
 .cover{
-  width: 15rem;
-  height: 15rem;
+  height: 100%;
 }
 
 .text_h{

@@ -69,6 +69,8 @@ btn.onclick = function () {
   index[6].addEventListener('animationend', function () {
     index[7].style.animation = 'P4In 2s ease-out 6500ms forwards'
   })
+  index[7].addEventListener('animationend', function () {
+  })
 }
 
 export {controller as default}
