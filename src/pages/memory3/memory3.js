@@ -48,7 +48,8 @@ let playFunc = function () {
       show()
     }, 24000)
     setTimeout(function () {
-      m3.className = m3.className + ' ' + 'Out'
+      m3.className = m3.className + ' ' + 'Me3Out'
+      document.getElementsByClassName('Me3Out')[0].style.animation = 'M3Out 2s ease-in 1s forwards'
     }, 32000)
   })
 }

@@ -5,7 +5,6 @@
 
 .Pg2Out{
   transform: translate(0, -500%);
-  animation: P2Out 2s ease-in 1s forwards;
 }
 
 .js-page2-chart {

@@ -45,6 +45,7 @@ var playFunc = function () {
   })
   document.getElementsByClassName('text_2')[0].addEventListener('animationend', function () {
     p2.className = p2.className + ' ' + 'page2Change'
+    document.getElementsByClassName('page2Change')[0].style.animation = 'P2Out 2s ease-in 1s forwards'
   })
 }
 
