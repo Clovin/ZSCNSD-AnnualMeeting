@@ -27,6 +27,7 @@ controller.pushAnimation(page4)
 let index = []
 let btn = document.getElementsByClassName('btn')[0]
 let cover = document.getElementsByClassName('cover')[0]
+let bgm = document.getElementsByClassName('bgm')[0]
 index[0] = document.getElementsByClassName('home')[0]
 index[1] = document.getElementsByClassName('page1')[0]
 index[2] = document.getElementsByClassName('memory1')[0]
@@ -37,6 +38,7 @@ index[6] = document.getElementsByClassName('page3')[0]
 index[7] = document.getElementsByClassName('page4')[0]
 
 btn.onclick = function () {
+  bgm.play()
   cover.style.animation = 'Rotate 10s linear infinite'
   index[0].style.animation = 'SclOut 2s ease-out 3s forwards'
   index[0].addEventListener('animationend', function () {
