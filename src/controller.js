@@ -37,6 +37,31 @@ index[5] = document.getElementsByClassName('page2')[0]
 index[6] = document.getElementsByClassName('page3')[0]
 index[7] = document.getElementsByClassName('page4')[0]
 
+function IsPc () {
+  let UA = navigator.userAgent
+  console.log(UA)
+  let agents = ['Android', 'iPhone',
+    'SymbianOS', 'Windows Phone',
+    'iPad', 'iPod']
+  let flag = true
+  for (let i = 0; i < agents.length; i++) {
+    if (UA.indexOf(agents[i]) > 0) {
+      flag = false
+      break
+    }
+  }
+  return flag
+}
+
+window.onload = function () {
+  if (IsPc() === true) {
+    let body = document.getElementsByTagName('body')[0]
+    body.innerHTML = '请使用手机观看'
+    body.className = 'white_text' + ' text_center'
+    body.style.fontSize = '2rem'
+  }
+}
+
 btn.onclick = function () {
   bgm.play()
   cover.style.animation = 'Rotate 10s linear infinite'

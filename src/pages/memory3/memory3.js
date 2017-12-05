@@ -2,11 +2,9 @@ import './stylesheets/memory3.css'
 import Page from '../../lib/Page'
 
 let initFunc = function () {
-  console.log('init')
 }
 
 let playFunc = function () {
-  console.log('m3')
   let i = 0
 
   let text = '从那一年的夏天开始， 懵懂无知的稚嫩少女， 每周一天地越过下课的人群， 准时准点地值班。▼'
